@@ -8,7 +8,10 @@ public class IsSorted {
 
     // Helper recursive function
     private static boolean isSorted(int[] a, int i) {
-        if (i >= a.length - 1 || a.length <= 1) {
+        if (a.length <= 1 || a == null) {
+            return true;
+        }
+        if (i >= a.length - 1) {
             return true;
         }
 
