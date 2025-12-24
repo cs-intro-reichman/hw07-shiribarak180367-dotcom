@@ -15,9 +15,6 @@ public class IsSorted {
             return true;
         }
 
-        if (isSorted(a, i) == true) {
-            return isSorted(a, i);
-        }
         if (a[i] > a[i + 1]) {
             return false;
 
